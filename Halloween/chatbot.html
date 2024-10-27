@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="chatbot.css">
+    <title>Spooky Chatbot</title>
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chatbox">
+            <img src="assets/bot-image.png" alt="Bot" class="bot-image"> <!-- Replace with your bot image -->
+            <div id="chatlog" class="chatlog"></div>
+            <input type="text" id="userInput" class="user-input" placeholder="Type your message...">
+            <button id="sendBtn" class="send-button">Send</button>
+        </div>
+    </div>
+
+    <audio id="laughAudio" src="assets/evil-laugh.mp3"></audio>
+    <audio id="whisperAudio" src="assets/whisper.mp3"></audio>
+
+    <script src="chatbot.js"></script>
+</body>
+</html>

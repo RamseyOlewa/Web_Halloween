@@ -1,0 +1,72 @@
+body {
+    background-color: #111; /* Dark background */
+    color: #fff; /* White text */
+    font-family: 'Righteous', cursive; /* Font for titles */
+    display: flex; /* Use Flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+    margin: 0; /* Remove default margin */
+}
+
+.container {
+    text-align: center; /* Center text within the container */
+    border: 5px solid #ff5733; /* Orange border for a spooky effect */
+    border-radius: 20px; /* Rounded corners */
+    padding: 20px; /* Padding around content */
+    background: rgba(50, 50, 50, 0.8); /* Semi-transparent dark background */
+}
+
+.title {
+    font-family: 'Creepster', cursive; /* Spooky font for title */
+    font-size: 60px; /* Larger font for title */
+    margin-bottom: 20px; /* Space below title */
+}
+
+.timer-input {
+    font-size: 24px; /* Larger font for input */
+    padding: 10px; /* Padding inside input */
+    margin: 10px 0; /* Space around input */
+    border-radius: 10px; /* Rounded corners */
+    border: 2px solid #ff5733; /* Orange border */
+}
+
+.start-button {
+    background-color: #ff5733; /* Button color */
+    color: white; /* Text color */
+    padding: 15px 30px; /* Button padding */
+    font-size: 24px; /* Button font size */
+    border: none; /* No border */
+    border-radius: 10px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.start-button:hover {
+    background-color: #c70039; /* Darker shade on hover */
+}
+
+#timerDisplay {
+    font-size: 48px; /* Larger font for the timer */
+    margin: 20px 0; /* Space around the timer */
+}
+
+.hidden {
+    display: none; /* Class to hide elements */
+}
+
+.horror-image {
+    width: 200px; /* Adjust image size as needed */
+    height: auto; /* Maintain aspect ratio */
+    position: absolute; /* Position for animation */
+    opacity: 0; /* Start hidden */
+    transition: opacity 1s ease-in-out; /* Smooth transition for opacity */
+}
+
+.horror-image.animate-in {
+    opacity: 1; /* Fade in */
+}
+
+.horror-image.animate-out {
+    opacity: 0; /* Fade out */
+}

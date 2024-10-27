@@ -1,0 +1,63 @@
+body {
+    font-family: 'Creepster', cursive; /* Add a spooky font */
+    background-color: #222; /* Dark background */
+    color: #fff; /* White text */
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 30px;
+    font-size: 36px;
+}
+
+.sound-list {
+    list-style: none;
+    padding: 0;
+}
+
+.sound-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #333; /* Darker background for sound items */
+    border-radius: 8px;
+    margin: 10px 0;
+    padding: 15px;
+    transition: background 0.3s;
+}
+
+.sound-item:hover {
+    background: #444; /* Lighter background on hover */
+}
+
+.play-button, .stop-button {
+    background-color: #ff4081; /* Play button color */
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.play-button:hover, .stop-button:hover {
+    background-color: #e91e63; /* Darker shade on hover */
+}
+
+.sound-title {
+    font-size: 18px;
+    flex-grow: 1;
+    padding: 0 20px;
+}
+
+.stop-button {
+    display: block;
+    margin: 20px auto; /* Center the stop button */
+}

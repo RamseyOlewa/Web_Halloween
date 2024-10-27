@@ -1,0 +1,96 @@
+/* home.css */
+body{
+    background-image: url(assets/home.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* Navbar styles */
+.navbar {
+    background-color: black; /* Black background */
+    display: flex; /* Flexbox layout for horizontal alignment */
+    align-items: center; /* Center items vertically */
+    padding: 10px 20px; /* Padding for the navbar */
+    position: sticky; /* Sticky position */
+    top: 0; /* Stick to the top */
+    z-index: 1000; /* Ensure it stays above other content */
+
+}
+
+.navbar .logo {
+    width: 180px; /* Width of the logo */
+    cursor: pointer; /* Pointer cursor on hover */
+    margin-right: auto; /* Push the logo to the left */
+}
+
+.nav-links {
+    display: flex; /* Horizontal alignment for links */
+    gap: 15px; /* Space between links */
+    margin-left: auto; /* Push links to the right */
+}
+
+.nav-links a {
+    color: white; /* Text color */
+    text-decoration: none; /* Remove underline */
+    font-size: 18px; /* Font size */
+  
+    padding: 10px; /* Padding for the links */
+}
+
+.nav-links a:hover {
+    background: rgba(255, 255, 255, 0.1); /* Light background on hover */
+}
+
+/* Cart icon styling */
+.cart-icon {
+    display: flex; /* Flex layout for centering the icon */
+    align-items: center; /* Center vertically */
+    color: white; /* Icon color */
+    font-size: 50px; /* Icon size */
+}
+
+.cart-icon:hover {
+    background: white; /* Light background on hover for cart */
+
+}
+
+/* Main content style */
+.content {
+    padding: 20px;
+ 
+    
+}
+
+/* Card Container */
+.card-container {
+    display: flex; /* Flexbox layout */
+    justify-content: space-around; /* Space between cards */
+    flex-wrap: wrap; /* Wrap cards to next line if not enough space */
+    margin-top: 20px; /* Space above cards */
+}
+
+/* Card Styles */
+.card {
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    border: 2px solid rgb(255, 255, 255); /* White border */
+    border-radius: 10px; /* Rounded corners */
+    width: 350px; /* Card width */
+    margin: 10px; /* Margin around cards */
+    padding: 20px; /* Padding inside cards */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: transform 0.3s; /* Smooth transform on hover */
+    margin-top: 6%;
+    color: white;
+}
+
+.card:hover {
+    transform: scale(1.05); /* Scale up on hover */
+}
+
+/* Card Image */
+.card-image {
+    width: 100%; /* Full width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Rounded corners for image */
+   
+}
+

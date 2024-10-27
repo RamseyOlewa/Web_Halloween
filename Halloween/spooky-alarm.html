@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spooky Alarm</title>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="spooky-alarm.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Spooky Timer</h1>
+        <input type="number" id="timer" placeholder="Enter seconds" min="1" class="timer-input">
+        <button id="startTimer" class="start-button">Start Timer</button>
+        <div id="timerDisplay" class="hidden">00:00</div>
+        <div id="alarmMessage" class="hidden"></div>
+        <audio id="spookySound" src="assets/evil-laugh.mp3"></audio>
+        <div id="horrorImages" class="hidden">
+            <img class="horror-image" src="assets/horror1.png" alt="Horror Image 1">
+            <img class="horror-image" src="assets/horror2.png" alt="Horror Image 2">
+            <img class="horror-image" src="assets/horror3.png" alt="Horror Image 3">
+        </div>
+    </div>
+
+    <script src="spooky-alarm.js"></script>
+</body>
+</html>

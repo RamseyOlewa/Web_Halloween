@@ -1,0 +1,60 @@
+body {
+    font-family: 'Creepster', cursive; /* Spooky font */
+    background-color: #222; /* Dark background */
+    color: #fff; /* White text */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Centering the chatbot horizontally */
+    align-items: center; /* Centering the chatbot vertically */
+    height: 100vh; /* Full viewport height */
+}
+
+.chat-container {
+    position: relative;
+    width: 400px; /* Fixed width */
+    max-height: 500px; /* Max height */
+}
+
+.chatbox {
+    background: rgba(50, 50, 50, 0.9); /* Semi-transparent background */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+.bot-image {
+    width: 80px; /* Adjust the width as needed */
+    position: absolute;
+    top: 1px; /* Distance from the top */
+    right: 1px; /* Distance from the right */
+}
+
+.chatlog {
+    margin-bottom: 15px;
+    max-height: 300px; /* Limit chat log height */
+    overflow-y: auto; /* Scrollable if content exceeds */
+}
+
+.user-input {
+    width: 70%; /* Input width */
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+.send-button {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background: #ff4081; /* Button color */
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.send-button:hover {
+    background: #e91e63; /* Darker shade on hover */
+}
